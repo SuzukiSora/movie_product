@@ -15,12 +15,16 @@
  */
 
 
-html {
-  min-height: 100%;
-  position: relative;
-}
+#wrapper {
+  padding-top: 60px;
+  height: 100vh;
+  background-image: url(back_image.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-color: #464646; */
 
-body {
-  margin-bottom: 3em;
+
 }
 
