@@ -1,0 +1,50 @@
+#users {
+  padding-top: 60px;
+
+  .in_h1 {
+    margin: 20px;
+  }
+
+  .table {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    border-top: black 1px solid;
+    color: black;
+  }
+
+}
+
+#user_e {
+  padding-top: 70px;
+
+  h4 {
+    margin: 30px auto;
+    font-weight: bold;
+    border-bottom: 2px solid greenyellow;
+  }
+
+  .field {
+    margin: 40px auto;
+
+    .c_label {
+      font-size: 20px;
+    }
+
+    .comment_text {
+      border: 2px solid #0a0;
+      border-radius: 0.67em;
+      padding: 0.5em;
+      background-color: snow;
+      width: 30vw;
+      height: 25vh;
+      font-size: 1em;
+      line-height: 1.2;
+    }
+  }
+
+}
+
+
+
+

@@ -1,9 +1,43 @@
-footer {
-  bottom: 0;
-  height: 3em;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  color: white;
-  padding: 10px;
+
+
+#sign_new, #log_new {
+  padding-top: 60px;
+  h2{
+    font-weight: bold;
+    margin: 30px;
+  }
+  .row {
+    margin: 30px 10px auto;
+
+    .form-controll {
+      margin-bottom: 20px;
+      width: 50%;
+      border-radius: 10px;
+    }
+
+    .actions {
+      margin-bottom: 20px;
+
+      input {
+        padding: 5px 30px;
+      }
+    }
+  }
+
 }
+
+li {
+  padding-right: 10px;
+}
+
+#links_btn {
+  padding: 5px 40px;
+  margin: 20px auto;
+}
+
+
+
+nav {
+  padding-bottom: 10px;
+}
+
