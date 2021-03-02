@@ -1,8 +1,7 @@
-
-
 <div id="s_users">
   <div class="row">
     <aside id="name_card" class="col-sm-4">
+      <%= render 'relationships/follow_button', user: @user %>
       <div class="card">
         <div class="card-header">
           <%= @user.name %>
@@ -10,15 +9,24 @@
         <div class="card-body">
 
           <% if current_user == @user %>
-            <div class="p_edit"><%= link_to 'プロフィールを編集', edit_user_path(current_user) %></div>
-          <%end%>
+            <div class="profile">
+              <%= link_to 'プロフィールを編集', edit_user_path(@user), class: "btn btn-light profile_btn" %>
+            </div>
+            <div class="profile">
+              <%= link_to '投稿', new_post_path(@user), class: 'btn btn-light profile_btn' %>
+            </div>
+          <% end %>
 
-          <div class="p_comment">
-            <%=  simple_format(@user.comment) %>
+          <div class="age_text">
+            年齢： <%=  @user.age %>years old
+          </div>
+
+          <div class="box17">
+            <%= simple_format(@user.comment) %>
           </div>
 
           <% if @user.image.attached? %>
-            <div id="user_image">
+            <div class="user_image">
               <%= image_tag @user.image %>
             </div>
           <% end %>
@@ -26,12 +34,9 @@
         </div>
       </div>
     </aside>
-    <div class="col-sm-8">
-      <ul class="nav nav-tabs nav-justified mb-3">
-        <li class="nav-item"><a href="#" class="nav-link">POST</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">フォロー</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">フォロワー</a></li>
-      </ul>
-    </div>
+    <%= render 'users/user', users: @users %>
   </div>
-</div>  
+</div> 
+
+
+

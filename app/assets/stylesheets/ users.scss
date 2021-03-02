@@ -1,5 +1,6 @@
 #users {
-  padding-top: 60px;
+  padding: 60px;
+
 
   .in_h1 {
     margin: 20px;
@@ -25,22 +26,45 @@
   }
 
   .field {
-    margin: 40px auto;
-
+    
     .c_label {
       font-size: 20px;
     }
 
-    .comment_text {
-      border: 2px solid #0a0;
+    .age_text {
+      border: 2px solid grey;
       border-radius: 0.67em;
       padding: 0.5em;
-      background-color: snow;
-      width: 30vw;
-      height: 25vh;
+      background-color: #80808021;
       font-size: 1em;
       line-height: 1.2;
     }
+
+    .name_text {
+      border: 2px solid grey;
+      border-radius: 0.67em;
+      padding: 0.5em;
+      background-color: #80808021;
+      font-size: 1em;
+      line-height: 1.2;
+      width: 15vw;
+      height: 5vh;
+    }
+
+    .comment_text {
+      border: 2px solid grey;
+      border-radius: 0.67em;
+      padding: 0.5em;
+      background-color: #80808021;
+      font-size: 1em;
+      line-height: 1.2;
+      width: 30vw;
+      height: 25vh;
+    }
+
+
+    
+
   }
 
 }
