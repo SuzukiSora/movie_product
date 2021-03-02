@@ -1,6 +1,23 @@
-#users {
+#users, #posts {
   padding: 60px;
 
+  #search {
+    .search_form {
+      input {
+        margin-bottom: 20px;
+        width: 50%;
+        border-radius: 10px;
+        margin-right: 4vw;
+      }
+    }
+    .search_btn {
+      input {
+        border-radius: 10px;
+        margin-bottom: 20px;
+        width: 20%;
+      }
+    }
+  }
 
   .in_h1 {
     margin: 20px;
@@ -15,6 +32,9 @@
   }
 
 }
+
+
+
 
 #user_e {
   padding-top: 70px;

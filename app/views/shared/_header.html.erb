@@ -11,9 +11,10 @@
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <% if user_signed_in? %>
-        <ul class="navbar-nav">
+        <ul class="navbar-nav login_nav">
           <li class="nav-item"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
-          <li class="nav-item"><%= link_to 'ユーザ一覧', users_path %></li>
+          <li class="nav-item"><%= link_to 'ユーザ一検索', users_path %></li>
+          <li class="nav-item"><%= link_to '投稿一覧', posts_path %></li>
         </ul>
       <% else %>
         <ul class="navbar-nav">
