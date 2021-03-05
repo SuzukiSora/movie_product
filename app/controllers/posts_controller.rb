@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 
-  before_action :authenticate_user!, only: [:index, :show, :new, :create, :edit, :create]
+  before_action :authenticate_user!, only: [:index, :show, :new, :create, :edit, :update]
 
   def index
     @q = Post.ransack(params[:q])
